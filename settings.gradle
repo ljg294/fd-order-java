@@ -2,3 +2,4 @@ rootProject.name = 'order'
 
 include(":order-api-server")
 include(":order-domain")
+include(":order-common")
