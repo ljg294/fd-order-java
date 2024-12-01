@@ -18,6 +18,6 @@ CREATE TABLE diner_order
     modified_date_time               DATETIME                    NOT NULL                         COMMENT '수정 일시',
 
     CONSTRAINT pk_diner_order PRIMARY KEY (diner_order_id),
-    CONSTRAINT uk_diner_id_order_number UNIQUE (diner_id, diner_order_number)
+    CONSTRAINT uk_diner_id_order_number UNIQUE (diner_id, diner_order_number),
     CONSTRAINT chk_diner_order_delete_yn CHECK (delete_yn IN ('Y', 'N')),
 ) ENGINE = INNODB DEFAULT CHARSET=utf8mb4 COMMENT='음식점 주문';

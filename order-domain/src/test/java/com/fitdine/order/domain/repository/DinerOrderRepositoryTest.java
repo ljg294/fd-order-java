@@ -69,7 +69,7 @@ class DinerOrderRepositoryTest {
     void testSaveOrderDuplicateOrderNumberInASingleDinerFail() {
 
         //Arrange
-        DinerOrderEntity dinerOrder2 = DinerOrderEntity.builder()
+        DinerOrderEntity dinerOrder2 = DinerOrderEntity.createBuilder()
                 .orderCustomerId(2L)
                 .dinerId(1L)
                 .dinerOrderNumber(10L)
